@@ -28,8 +28,16 @@ export default {
     }
   },
   methods: {
-    addTask(task) {
-      this.tasks = [...this.tasks, task]
+    async addTask(task) {
+      const res = await fetch("api/tasks", {
+        method: "post",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(task)
+      })
+      const data = await res.json()
+      this.tasks = [...this.tasks, data]
     },
     deleteTask(id) {
       if (confirm('Delete task?'))

@@ -1,34 +1,40 @@
 {
-    "tasks": [
-        {
-            "id": 1,
-            "text": "Doctor's Appointment",
-            "day": "March 1st at 2:30 pm",
-            "reminder": true
-        },
-        {
-            "id": 2,
-            "text": "School Meeting",
-            "day": "March 3rd at 1:30 pm",
-            "reminder": true
-        },
-        {
-            "id": 3,
-            "text": "Sprint Review Meeting",
-            "day": "March 5th at 4:30 pm",
-            "reminder": true
-        },
-        {
-            "id": 4,
-            "text": "Coffee with weird people",
-            "day": "March 6th at 6:30 pm",
-            "reminder": false
-        },
-        {
-            "id": 5,
-            "text": "Dinner with friends",
-            "day": "March 7th at 7:30 pm",
-            "reminder": false
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctor's Appointment",
+      "day": "March 1st at 2:30 pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "School Meeting",
+      "day": "March 3rd at 1:30 pm",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Sprint Review Meeting",
+      "day": "March 5th at 4:30 pm",
+      "reminder": true
+    },
+    {
+      "id": 4,
+      "text": "Coffee with weird people",
+      "day": "March 6th at 6:30 pm",
+      "reminder": false
+    },
+    {
+      "id": 5,
+      "text": "Dinner with friends",
+      "day": "March 7th at 7:30 pm",
+      "reminder": false
+    },
+    {
+      "id": 76992,
+      "text": "New Event",
+      "day": "10 Apr 2022",
+      "reminder": true
+    }
+  ]
 }
