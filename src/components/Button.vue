@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         onClick() {
-            console.log(`Clicked ${this.text} button`);
+            this.$emit('toggle-add-task')
         },
     }
 }
