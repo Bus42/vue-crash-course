@@ -22,7 +22,8 @@ export default {
   },
   methods: {
     deleteTask(id) {
-      console.log(`Task ${id} delete clicked`)
+      if(confirm('Delete task?'))
+      this.tasks = this.tasks.filter(t => t.id !== id)
     }
   },
   created() {
