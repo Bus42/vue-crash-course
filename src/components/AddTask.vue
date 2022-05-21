@@ -19,7 +19,30 @@
 
 <script>
 export default {
-    name: "AddTask"
+    name: "AddTask",
+    data() {
+        return {
+            text: "",
+            day: "",
+            reminder: false
+        }
+    },
+    methods: {
+        onSubmit(e) {
+            e.preventDefault();
+            if (!this.text) return alert("Please add a task");
+            const newTask = {
+                id: Math.floor(Math.random() * 100000),
+                text: this.text,
+                day: this.day,
+                reminder: this.reminder
+            }
+            this.text = "";
+            this.day = "";
+            this.reminder = false;
+            this.$emit('add-task', newTask)
+        }
+    }
 }
 </script>
 
