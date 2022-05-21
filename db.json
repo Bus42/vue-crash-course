@@ -29,12 +29,6 @@
       "text": "Dinner with friends",
       "day": "March 7th at 7:30 pm",
       "reminder": false
-    },
-    {
-      "id": 76992,
-      "text": "New Event",
-      "day": "10 Apr 2022",
-      "reminder": true
     }
   ]
 }

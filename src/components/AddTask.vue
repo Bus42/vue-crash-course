@@ -32,7 +32,6 @@ export default {
             e.preventDefault();
             if (!this.text) return alert("Please add a task");
             const newTask = {
-                id: Math.floor(Math.random() * 100000),
                 text: this.text,
                 day: this.day,
                 reminder: this.reminder

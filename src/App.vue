@@ -30,7 +30,7 @@ export default {
   methods: {
     async addTask(task) {
       const res = await fetch("api/tasks", {
-        method: "post",
+        method: "POST",
         headers: {
           "content-type": "application/json",
         },
@@ -39,9 +39,15 @@ export default {
       const data = await res.json()
       this.tasks = [...this.tasks, data]
     },
-    deleteTask(id) {
-      if (confirm('Delete task?'))
-        this.tasks = this.tasks.filter(t => t.id !== id)
+    async deleteTask(id) {
+      if (confirm('Delete task?')) {
+        const res = await fetch(`/api/tasks/${id}`, {
+          method: "DELETE"
+        });
+        res.status === 200 ? (this.tasks = this.tasks.filter(t => t.id !== id))
+          : alert(`Error deleting task ${id}`)
+
+      }
     },
     toggleReminder(id) {
       this.tasks.forEach(t => {
