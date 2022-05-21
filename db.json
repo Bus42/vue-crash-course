@@ -23,6 +23,12 @@
             "text": "Coffee with weird people",
             "day": "March 6th at 6:30 pm",
             "reminder": false
+        },
+        {
+            "id": 5,
+            "text": "Dinner with friends",
+            "day": "March 7th at 7:30 pm",
+            "reminder": false
         }
     ]
 }
