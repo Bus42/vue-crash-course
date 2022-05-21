@@ -1,7 +1,8 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button @toggle-add-task="$emit('toggle-add-task')" text="Add Task" color="#7AAF00" />
+        <Button @toggle-add-task="$emit('toggle-add-task')" :text="showAddTask ? 'Close' : 'Add Task'"
+            :color="showAddTask ? '#AF0022' : '#7AAF00'" />
     </header>
 </template>
 
@@ -14,7 +15,8 @@ export default {
             type: String,
             default: "Title",
             required: true
-        }
+        },
+        showAddTask: Boolean
     },
     components: {
         Button

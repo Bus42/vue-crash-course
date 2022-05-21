@@ -18,7 +18,7 @@ export default {
 
 <style scoped >
 .fas {
-    color: red;
+    color: #AF0022;
 }
 
 .task {
