@@ -5,13 +5,15 @@
       <AddTask @add-task="addTask" />
     </div>
     <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header'
-import Tasks from './components/Tasks'
-import AddTask from './components/AddTask'
+import Header from './components/Header';
+import Tasks from './components/Tasks';
+import AddTask from './components/AddTask';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     Header,
     Tasks,
     AddTask,
-    AddTask
+    AddTask,
+    Footer
   },
   data() {
     return {
