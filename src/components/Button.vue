@@ -1,12 +1,12 @@
 <template>
-    <button :style="{background: color}" class="btn" >{{title}}</button>
+    <button @click="onClick()" :style="{ background: color }" class="btn">{{ text }}</button>
 </template> 
 
 <script>
 export default {
     name: 'Button',
     props: {
-        title: {
+        text: {
             type: String,
             default: "button",
             required: true
@@ -16,10 +16,14 @@ export default {
             default: "blue",
             required: true
         }
+    },
+    methods: {
+        onClick() {
+            console.log(`Clicked ${this.text} button`);
+        },
     }
 }
 </script>
 
 <style>
-
 </style>
